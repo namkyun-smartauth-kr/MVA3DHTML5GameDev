@@ -5,8 +5,8 @@
 
     <title>Babylon.js sample code</title>
     <!-- Babylon.js -->
-    <script src="http://www.babylonjs.com/hand.minified-1.2.js"></script>
-    <script src="http://www.babylonjs.com/babylon.js"></script>
+    <script src="hand.minified-1.2.js"></script>
+    <script src="babylon.js"></script>
     <style>
         html, body {
             overflow: hidden;
@@ -26,7 +26,7 @@
 <body>
     <canvas id="renderCanvas"></canvas>
     <script>
-        /// <reference path="http://www.babylonjs.com/babylon.js" />
+        /// <reference path="babylon.js" />
         var canvas = document.getElementById("renderCanvas");
         var engine = new BABYLON.Engine(canvas, true);
 
@@ -53,7 +53,7 @@
         mirrorMaterial.diffuseColor = new BABYLON.Color3(0.4, 0.4, 0.4);
         mirrorMaterial.reflectionTexture = new BABYLON.MirrorTexture("mirror", 1024, scene, true); //Create a mirror texture
         mirrorMaterial.reflectionTexture.mirrorPlane = new BABYLON.Plane(0, -1.0, 0, 0.0);
-        mirrorMaterial.reflectionTexture.level = 0.6;//Select the level (0.0 > 1.0) of the reflection
+        mirrorMaterial.reflectionTexture.level = 1.0;//Select the level (0.0 > 1.0) of the reflection
 
         ground.material = mirrorMaterial;
 
@@ -166,6 +166,8 @@
         scene.registerBeforeRender(function() {
             var mat4 = scene.getMaterialByName("default4");
             mat4.diffuseTexture.uOffset += 0.01;
+
+            bigSphere.position.x += 0.01;
         });
 
         // Resize

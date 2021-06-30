@@ -5,8 +5,8 @@
 
     <title>Babylon.js sample code</title>
     <!-- Babylon.js -->
-    <script src="http://www.babylonjs.com/hand.minified-1.2.js"></script>
-    <script src="http://www.babylonjs.com/babylon.js"></script>
+    <script src="hand.minified-1.2.js"></script>
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
     <style>
         html, body {
             overflow: hidden;
@@ -29,15 +29,26 @@
         var canvas = document.getElementById("renderCanvas");
         var engine = new BABYLON.Engine(canvas, true);     
 
+        newScene = new BABYLON.Scene(engine);
+        
         BABYLON.SceneLoader.Load("v8/", "v8.babylon", engine, function (newScene) {
 
             newScene.activeCamera.attachControl(canvas);
 
-            engine.runRenderLoop(function() {
+            engine.runRenderLoop(function () {
                 newScene.render();
             });
         });
+/*        
+        BABYLON.SceneLoader.Load("gltf/", "house.gltf", engine, function (newScene) {
 
+            newScene.activeCamera.attachControl(canvas);
+
+            engine.runRenderLoop(function () {
+                newScene.render();
+            });
+        });
+*/        
         // Resize
         window.addEventListener("resize", function () {
             engine.resize();

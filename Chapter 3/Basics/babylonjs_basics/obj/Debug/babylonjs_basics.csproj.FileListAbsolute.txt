@@ -4,3 +4,10 @@ c:\users\davrous\documents\visual studio 2013\Projects\babylonjs_basics\babylonj
 c:\users\davrous\documents\visual studio 2013\Projects\babylonjs_basics\babylonjs_basics\obj\Debug\babylonjs_basics.csprojResolveAssemblyReference.cache
 c:\users\davrous\documents\visual studio 2013\Projects\babylonjs_basics\babylonjs_basics\obj\Debug\babylonjs_basics.dll
 c:\users\davrous\documents\visual studio 2013\Projects\babylonjs_basics\babylonjs_basics\obj\Debug\babylonjs_basics.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\bin\babylonjs_basics.dll.config
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\bin\babylonjs_basics.dll
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\bin\babylonjs_basics.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\obj\Debug\babylonjs_basics.csproj.CoreCompileInputs.cache
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\obj\Debug\babylonjs_basics.dll
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\obj\Debug\babylonjs_basics.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 3\Basics\babylonjs_basics\obj\Debug\babylonjs_basics.csproj.AssemblyReference.cache

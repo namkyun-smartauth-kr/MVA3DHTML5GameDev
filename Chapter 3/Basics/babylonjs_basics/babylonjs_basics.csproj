@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,6 +69,8 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="scripts\babylon.js" />
+    <Content Include="scripts\materialTest.js" />
+    <Content Include="scripts\basicsWork.js" />
     <Content Include="scripts\basicsfinal.js" />
     <Content Include="scripts\basics.js" />
     <Content Include="scripts\hand.minified-1.2.js" />

@@ -40,3 +40,10 @@ C:\Users\davrous\SkyDrive\Boulot\MVA\Game Development Series - 3D HTML5 Game Dev
 C:\Users\davrous\SkyDrive\Boulot\MVA\Game Development Series - 3D HTML5 Game Development\Chapter 5\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.csprojResolveAssemblyReference.cache
 C:\Users\davrous\SkyDrive\Boulot\MVA\Game Development Series - 3D HTML5 Game Development\Chapter 5\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.dll
 C:\Users\davrous\SkyDrive\Boulot\MVA\Game Development Series - 3D HTML5 Game Development\Chapter 5\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\bin\BabylonJSSimpleWebApp.dll.config
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\bin\BabylonJSSimpleWebApp.dll
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\bin\BabylonJSSimpleWebApp.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.csproj.AssemblyReference.cache
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.csproj.CoreCompileInputs.cache
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.dll
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 6\Universal Apps\BabylonJSSimpleWebApp\BabylonJSSimpleWebApp\obj\Debug\BabylonJSSimpleWebApp.pdb

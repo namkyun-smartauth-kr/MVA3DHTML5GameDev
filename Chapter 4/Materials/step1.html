@@ -5,8 +5,8 @@
 
         <title>Babylon.js sample code</title>
         <!-- Babylon.js -->
-        <script src="http://www.babylonjs.com/hand.minified-1.2.js"></script>
-        <script src="http://www.babylonjs.com/babylon.js"></script>
+        <script src="hand.minified-1.2.js"></script>
+        <script src="babylon.js"></script>
         <style>
             html, body {
                 overflow: hidden;
@@ -31,7 +31,7 @@
 
         var scene = new BABYLON.Scene(engine);
 
-        var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
+        var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(10, 10, 10), scene);
 
         camera.setTarget(new BABYLON.Vector3.Zero());
 
@@ -39,9 +39,9 @@
 
         var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
 
-        var sphere = BABYLON.Mesh.CreateSphere("sphere1", 16, 2, scene);
+        var sphere = BABYLON.Mesh.CreateSphere("sphere1", 30, 10, scene);
 
-        sphere.position.y = 1;
+        sphere.position.y = 5;
 
         var ground = BABYLON.Mesh.CreateGround("ground1", 100, 100, 2, scene);
 

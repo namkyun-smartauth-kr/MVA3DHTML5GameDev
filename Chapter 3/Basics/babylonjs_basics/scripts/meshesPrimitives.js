@@ -39,7 +39,7 @@ function startBabylonJS() {
 
         // Creation of a torus
         // (name, diameter, thickness, tessellation, scene, updatable)
-        var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 10, scene, false);
+        var torus = BABYLON.Mesh.CreateTorus("torus", 5, 1, 30, scene, false);
 
         // Creation of a knot
         // (name, radius, tube, radialSegments, tubularSegments, p, q, scene, updatable)

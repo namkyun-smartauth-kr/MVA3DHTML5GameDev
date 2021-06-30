@@ -1,4 +1,4 @@
-﻿/// <reference path="/scripts/babylon.js" />
+﻿ /// <reference path="/scripts/babylon.js" />
 
 "use strict";
 

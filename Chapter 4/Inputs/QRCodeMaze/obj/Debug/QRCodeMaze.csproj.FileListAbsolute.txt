@@ -28,3 +28,10 @@ C:\Users\davrous\Desktop\MVA Babylon.js\Chapter3\Inputs\QRCodeMaze\bin\QRCodeMaz
 C:\Users\davrous\Desktop\MVA Babylon.js\Chapter3\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.csprojResolveAssemblyReference.cache
 C:\Users\davrous\Desktop\MVA Babylon.js\Chapter3\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.dll
 C:\Users\davrous\Desktop\MVA Babylon.js\Chapter3\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\bin\QRCodeMaze.dll.config
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\bin\QRCodeMaze.dll
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\bin\QRCodeMaze.pdb
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.csproj.AssemblyReference.cache
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.csproj.CoreCompileInputs.cache
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.dll
+C:\Users\namky\Documents\GitHub\MVA3DHTML5GameDev\Chapter 4\Inputs\QRCodeMaze\obj\Debug\QRCodeMaze.pdb

@@ -5,8 +5,8 @@
 
     <title>Babylon.js sample code</title>
     <!-- Babylon.js -->
-    <script src="http://www.babylonjs.com/hand.minified-1.2.js"></script>
-    <script src="http://www.babylonjs.com/babylon.js"></script>
+    <script src="hand.minified-1.2.js"></script>
+    <script src="babylon.js"></script>
     <style>
         html, body {
             overflow: hidden;
@@ -66,7 +66,6 @@
                     mat.diffuseColor = BABYLON.Color3.Red();
                     mat.specularColor = BABYLON.Color3.Black();
                     break;
-
                 case 1:
                     mat.diffuseColor = BABYLON.Color3.Red();
                     mat.specularColor = BABYLON.Color3.White();
@@ -84,26 +83,25 @@
 
                 case 4:
                     mat.diffuseTexture = new BABYLON.Texture("wood.jpg", scene);
-                    mat.diffuseTexture.uScale = 5.0;
-                    mat.diffuseTexture.vScale = 5.0;
+                    mat.diffuseTexture.uScale = 10.0;
+                    mat.diffuseTexture.vScale = 10.0;
                     break;
 
                 case 5:
                     mat.diffuseTexture = new BABYLON.Texture("Tree.png", scene);
-                    mat.diffuseTexture.hasAlpha = true;
+                    mat.diffuseTexture.hasAlpha = false;
                     break;
 
                 case 6:
                     mat.diffuseTexture = new BABYLON.Texture("Tree.png", scene);
                     mat.emissiveColor = BABYLON.Color3.Green();
-                    mat.diffuseTexture.hasAlpha = true;
-                    mat.backFaceCulling = false;
+                    mat.diffuseTexture.hasAlpha = true;false;
                     break;
 
                 case 7:
                     mat.diffuseColor = BABYLON.Color3.Purple();
                     mat.bumpTexture = new BABYLON.Texture("normalMap.jpg", scene);
-                    mat.bumpTexture.level = 2.0;
+                    mat.bumpTexture.level = 1.0;
                     break;
 
                 case 8:
@@ -114,6 +112,7 @@
                 case 9:
                     mat.wireframe = true;
                     break;
+
             }
 
             sphere.material = mat;
