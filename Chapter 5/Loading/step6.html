@@ -47,6 +47,7 @@
         var scene = null;
         var sceneToRender = null;
         var createDefaultEngine = function () { return new BABYLON.Engine(canvas, true, { preserveDrawingBuffer: true, stencil: true, disableWebGL2Support: false }); };
+        var advancedTexture;
         var delayCreateScene = function () {
             // Create a scene.
             var scene = new BABYLON.Scene(engine);
@@ -82,22 +83,97 @@
                 // The default camera looks at the back of the asset.
                 // Rotate the camera by 180 degrees to the front of the asset.
                 //scene.activeCamera.alpha += Math.PI;
-                /*
-                var node = scene.getNodes();
+                
+                var nodes = scene.getNodes();
                 advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+                console.log('nodes are ' + nodes.length);
                 for (i = 0; i <= nodes.length; i++) {
+                    if (nodes[i].id == null)
+                        nodes[i].id = "";
                     console.log('nodes are ' + nodes[i].id);
                     var mesh1 = scene.getMeshByName(nodes[i].id);
                     mesh1.actionManager = new BABYLON.ActionManager(scene);
+                    mesh1.checkCollisions = true;
                     // do something here
 
                     makeOverOut(mesh1, scene, advancedTexture);
                 }
-                */
+                
                 scene.actionManager = new BABYLON.ActionManager(scene);
                 
             });
             //*/
+            /*
+            BABYLON.SceneLoader.ImportMesh("", "./", "SD-193.gltf", scene, function (newMeshes, particleSystems, skeletons) {
+                scene.createDefaultCameraOrLight(true, true, true);
+
+                scene.activeCamera.lowerRadiusLimit = 1.0;
+                scene.activeCamera.upperRadiusLimit = 100.0;
+
+                var light2 = new BABYLON.DirectionalLight("dir01", new BABYLON.Vector3(0, -0.5, -1.0), scene);
+                light2.position = new BABYLON.Vector3(0, 6, 6);
+                light2.shadowOrthoScale = 0.5;
+
+                // Shadows
+                var shadowGenerator = new BABYLON.ShadowGenerator(1024, light2);
+                shadowGenerator.useBlurExponentialShadowMap = true;
+                shadowGenerator.blurKernel = 32;
+
+                shadowGenerator.addShadowCaster(scene.meshes[0], true);
+                for (var index = 0; index < newMeshes.length; index++) {
+                    newMeshes[index].receiveShadows = false;;
+                }
+
+                var helper = scene.createDefaultEnvironment({
+                    enableGroundShadow: true
+                });
+
+                helper.setMainColor(new BABYLON.Color3(0.5, 0.2, 0.2));
+
+                scene.stopAllAnimations();
+
+                // Enable animation blending for all animations
+                scene.animationPropertiesOverride = new BABYLON.AnimationPropertiesOverride();
+                scene.animationPropertiesOverride.enableBlending = true;
+                scene.animationPropertiesOverride.blendingSpeed = 0.02;
+                scene.animationPropertiesOverride.loopMode = 1;
+
+                // UI
+                var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+                advancedTexture.renderScale = 0.5;
+                var UiPanel = new BABYLON.GUI.StackPanel();
+                UiPanel.width = "220px";
+                UiPanel.fontSize = "14px";
+                UiPanel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
+                UiPanel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+                advancedTexture.addControl(UiPanel);
+
+                // Animation groups
+                for (var index = 0; index < scene.animationGroups.length; index++) {
+                    var group = scene.animationGroups[index];
+                    group.start(true);
+                    group.setWeightForAllAnimatables(0);
+                    // Create a button per group
+                    createControl(group, UiPanel);
+                }
+
+                scene.animationGroups[0].start(true);
+                currentGroup = scene.animationGroups[0];
+                var c = [];
+                var s = [];
+                for (var i = 0; i < newMeshes.length; i++) {
+                    c[i] = newMeshes[i].clone();
+                }
+                c[0].position = new BABYLON.Vector3(1, 0, 0);
+                newMeshes[0].rotate(new BABYLON.Vector3(1, 0, 0), Math.PI / 2)
+                // A bit of glow :)
+                var gl = new BABYLON.GlowLayer("glow", scene, {
+                    mainTextureFixedSize: 512
+                });
+
+                engine.hideLoadingUI();
+            }
+            */
             /*
             var angle = 0;
             scene.registerBeforeRender(function () {

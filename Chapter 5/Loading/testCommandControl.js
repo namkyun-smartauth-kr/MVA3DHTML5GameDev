@@ -313,50 +313,67 @@ function setControls() {
   document.getElementById("closehelp").onclick = showHelp;
 }
 
+var prevTarget;
+var prevlinename;
+var prevtargetname;
+var click;
+
 var makeOverOut = function (mesh, scene, advancedTexture) {
-    mesh.actionManager.registerAction(new BABYLON.InterpolativeValueAction(BABYLON.ActionManager.OnPointerOutTrigger, mesh, 'visibility', 1, 300));
-    mesh.actionManager.registerAction(new BABYLON.InterpolativeValueAction(BABYLON.ActionManager.OnPointerOverTrigger, mesh, 'visibility', 2, 300));
+    console.log('makeOverOut - in');
+    mesh.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnPointerOutTrigger, mesh, 'visibility', 1, 300));
+    console.log('makeOverOut - 1');
+    mesh.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnPointerOverTrigger, mesh, 'visibility', .2, 300));
+    console.log('makeOverOut - 2');
     mesh.actionManager.registerAction(
-        new BABYLON.ExecuteCodeAction(BABYLLON.ActionManager.OnPickTrigger,
+        new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger,
             function () {
-                click.play();
+                //click.play();
                 var items = BABYLON.SceneSerializer.SerializeMesh(mesh);
                 var font_type = "Arial";
                 if (prevTarget) {
                     advancedTexture.removeControl(prevtargetname);
                     advancedTexture.removeControl(prevlinename);
                 }
-                var intext = JSON.stringify(items.meshs[0].name);
+                console.log('makeOverOut - 3 : ' + items.meshes[0].name);
+                var intext = JSON.stringify(items.meshes[0].name);
                 intext = retTexttoShow(intext);
                 var label = new BABYLON.GUI.TextBlock();
                 label.text = intext;
 
+                console.log('makeOverOut - 4 : ' + label.text);
                 var target = getTarget();
                 var rect1 = getRect();
                 var line1 = getLine();
 
+                console.log('makeOverOut - 5');
                 advancedTexture.addControl(line1);
                 advancedTexture.addControl(rect1);
                 advancedTexture.addControl(target);
                 rect1.addControl(label);
 
+                console.log('makeOverOut - 6');
                 target.linkWithMesh(mesh);
                 line1.linkWithMesh(mesh);
                 line1.connectedControl = rect1;
 
+                console.log('makeOverOut - 7');
                 prevTarget = true;
                 prevtargetname = target;
                 prevlinename = line1;
             }
         )
     );
+    console.log('makeOverOut - out');
 }
 
 function retTexttoShow(inptext) {
+    /*
     var outtext = "Info";
     if (inptext.toString().include("Tree")) {
         outtext = "Info- Tree";
     }
+    */
+    outtext = "Info- " + inptext;
     return outtext;
 }
 
